@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="depan bg-body-secondary pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="fs-1 text-success">Lacak Resimu Disini</h1>
+            <p class="text-secondary">
+              Lacak perjalanan paket anda dengan memasukan Resi. <br />terdapat
+              lebih dari 10 exspedisi yang bisa anda pilih sesuai dengan
+              espedisi paket anda.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- search lacak resi -->
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-8">
+            <div class="input-group mb-3 mt-3">
+              <input
+                type="text"
+                class="form-control input-resi"
+                placeholder="Masukan Resi Anda"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-secondary bg-primary text-white cari"
+                type="button"
+                id="button-addon2"
+              >
+                Lacak
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- apabila eror -->
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-8">
+            <p>buat test aja</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- jenis exspedisi -->
+      <div class="container pilihan">
+        <div class="row">
+          <div class="col col-md-8 hasil-resi">
+            <p class="keterangan-exs mb-0">Pilih Exspedisi :</p>
+            <a
+              href="#detail"
+              id="jne"
+              class="text-white rounded-2 px-3 bg-danger text-decoration-none"
+              >JNE</a
+            >
+            <a
+              href="#detail"
+              id="jnt"
+              class="bg-warning text-black rounded-2 jnt px-3 text-decoration-none"
+              >JNT</a
+            >
+            <a
+              href="#detail"
+              id="sicepat"
+              class="sicepat px-3 bg-info rounded-2 text-white text-decoration-none"
+              >SICEPAT</a
+            >
+            <a
+              href="#detail"
+              id="tiki"
+              class="tiki bg-success text-white rounded-2 px-3 text-decoration-none"
+              >TIKI</a
+            >
+            <a
+              href="#detail"
+              id="pos"
+              class="bg-info text-white rounded-2 pos px-3 text-decoration-none"
+              >POS</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- output resi -->
+      <div class="container pt-5 detail-resi">
+        <div class="row">
+          <div class="col col-md-8">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    Lihat Detail Paket Anda!
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTwo"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Waktu</th>
+                          <th scope="col">Perjalanan</th>
+                        </tr>
+                      </thead>
+                      <tbody class="tabel"></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree"
+                  >
+                    Lihat Perjalanan Paket Anda!
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseThree"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">ini isi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
