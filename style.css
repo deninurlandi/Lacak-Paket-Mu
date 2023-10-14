@@ -1,5 +1,10 @@
 body{
    font-family: 'Poppins', sans-serif;
+   box-sizing: border-box;
+   padding-bottom: 100px;
+}
+.depan{
+   padding-bottom: 50px;
 }
 
 h1{
@@ -8,13 +13,38 @@ h1{
 p{
    font-weight:600;
 }
+.p-ket{
+   font-weight: 400;
+}
 .pilihan{
    display: none;
 }
 .detail-resi{
    display:none;
 }
+.handle-error{
+   display: none;
+}
 .keterangan-exs{
    font-family: 'Inter', sans-serif;
    font-size: small;
 }
+.size-dr{
+   width : 207px;
+}
+
+.size-dr li{
+   display: inline-block;
+}
+
+strong{
+   font-weight: 600;
+}
+.p-error{
+   font-weight: 400;
+}
+
+img{
+   width:250px;
+}
+
