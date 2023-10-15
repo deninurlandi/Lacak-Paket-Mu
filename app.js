@@ -69,6 +69,7 @@ async function updateExspedisi(linka){
         <td>:</td>
         <td>${summary.status}</td>
       </tr>
+      
       <tr>
         <td>Dikirim Oleh</td>
         <td>:</td>
