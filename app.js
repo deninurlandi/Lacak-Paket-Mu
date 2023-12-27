@@ -4,7 +4,7 @@ const pilihan = document.querySelector('.pilihan')
 const isikanPerjalanan = document.querySelector('.tabel');
 const detailResi = document.querySelector('.detail-resi');
 const handleErr = document.querySelector('.handle-error')
-inputResi.addEventListener('change', function(){
+cari.addEventListener('click', function(){
    cekData(inputResi, pilihan)
    
 })
